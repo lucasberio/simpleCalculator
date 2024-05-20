@@ -51,6 +51,7 @@ public class Calculator {
             double newSec = sc.nextDouble();
             System.out.print("Enter the new operation [+, -, *, /, ^, %] or END to terminate: ");
             String newOp = sc.next();
+            //check for the valid operator
             while (!OPERATORS.contains(newOp) && !newOp.equals(END_COMMAND)) {
                 System.out.println("Invalid operation. Please enter a valid operation [+, -, *, /, ^, %]: ");
                 newOp = sc.next();
